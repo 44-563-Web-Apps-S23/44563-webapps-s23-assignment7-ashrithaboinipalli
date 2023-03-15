@@ -24,7 +24,7 @@
     background-color:lavender;
 
   }
-  #penalty{
+  #Penalty{
     color:Brown;
     font-size:20px;
     background-color:lightgray;
@@ -57,93 +57,159 @@
 </header>
   <p class="mouse">Click on the bushes to search for the mouse, beware the cat</p>
   <p id="bushes">Number of bushes checked is zero.</p>
-  <p id="penalty">Penalty is zero.</p>
-  <p class="click">Click for help.</p>
+  <p id="Penalty">Penalty is zero.</p>
+  <p class="click" onclick="help()">Click for help.</p>
   <p id="help">Help report</p>
 
   <div class="flex-container">
     <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image01" onclick="check(0)">
     </div>
     <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image02" onclick="check(1)">
     </div>
     <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image03" onclick="check(2)">
     </div>
     <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image04" onclick="check(3)">
     </div>
     <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image05" onclick="check(4)">
       </div>
       <div class="col-sm">
-          <img src="bush.jpg" alt="bush" height="100" width="100">
+          <img src="bush.jpg" alt="bush" height="100" width="100" id="image06" onclick="check(5)">
         </div>
  </div>
 
 <div class="flex-container">
   <div class="col-sm">
-    <img src="bush.jpg" alt="bush" height="100" width="100">
+    <img src="bush.jpg" alt="bush" height="100" width="100" id="image07" onclick="check(6)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image08" onclick="check(7)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image09" onclick="check(8)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image10" onclick="check(9)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image11" onclick="check(10)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image12" onclick="check(11)">
   </div>
 </div>
 
 <div class="flex-container">
 <div class="col-sm">
-<img src="bush.jpg" alt="bush" height="100" width="100">
+<img src="bush.jpg" alt="bush" height="100" width="100" id="image13" onclick="check(12)">
 </div>
 <div class="col-sm">
-  <img src="bush.jpg" alt="bush" height="100" width="100">
+  <img src="bush.jpg" alt="bush" height="100" width="100" id="image14" onclick="check(13)">
 </div>
 <div class="col-sm">
-  <img src="bush.jpg" alt="bush" height="100" width="100">
+  <img src="bush.jpg" alt="bush" height="100" width="100" id="image15" onclick="check(14)">
 </div>
 <div class="col-sm">
-  <img src="bush.jpg" alt="bush" height="100" width="100">
+  <img src="bush.jpg" alt="bush" height="100" width="100" id="image16" onclick="check(15)">
 </div>
 <div class="col-sm">
-  <img src="bush.jpg" alt="bush" height="100" width="100">
+  <img src="bush.jpg" alt="bush" height="100" width="100" id="image17" onclick="check(16)">
 </div>
 <div class="col-sm">
-  <img src="bush.jpg" alt="bush" height="100" width="100">
+  <img src="bush.jpg" alt="bush" height="100" width="100"  id="image18" onclick="check(17)">
 </div>
 </div>
 
 <div class="flex-container">
   <div class="col-sm">
-    <img src="bush.jpg" alt="bush" height="100" width="100">
+    <img src="bush.jpg" alt="bush" height="100" width="100"  id="image19" onclick="check(18)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100"  id="image20" onclick="check(19)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image21" onclick="check(20)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image22" onclick="check(21)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image23" onclick="check(22)">
   </div>
   <div class="col-sm">
-      <img src="bush.jpg" alt="bush" height="100" width="100">
+      <img src="bush.jpg" alt="bush" height="100" width="100" id="image24" onclick="check(23)">
   </div>
 
 </div>
+<script>
+  var ids=["image01","image02","image03","image04","image05","image06","image07","image08",
+           "image09","image10","image11","image12","image13","image14","image15","image16",
+           "image17","image18","image19","image20","image21","image22","image23","image24"]
+  var checkCount=0
+  var penalty=0
+  var lastCheck=0
+  var mouseLocation=13
+  var catLocation=21
+  var gameOver=false
+
+  function check(position){
+  if(gameOver==true){
+
+  }
+  else{
+    if(position==mouseLocation){
+      document.getElementById(ids[position]).src="rat.png";
+      gameOver=true;
+      penalty-=3;
+    }
+    else if(position==catLocation){
+      document.getElementById(ids[position]).src="cat.jpg";
+      gameOver=true;
+      penalty+=4;
+    }
+    else{
+      document.getElementById(ids[position]).src="grass.jpg";
+      checkCount+=1;
+      penalty+=1;
+    }
+    lastCheck=position;
+  }
+  bushes.innerHTML="Number of bushes checked is "+checkCount;
+  Penalty.innerHTML="Penalty is "+penalty;
+}
+
+function help() {
+  var col=lastCheck%6;
+  var row=Math.floor(lastCheck/6);
+  var col_mouse=mouseLocation%6;
+  var row_mouse=Math.floor(mouseLocation/6);
+  var col_cat=catLocation%6;
+  var row_cat=Math.floor(catLocation/6);
+  var col_diff_mouse=Math.abs(col-col_mouse);
+  var row_diff_mouse=Math.abs(row-row_mouse);
+  var col_diff_cat=Math.abs(col-col_cat);
+  var row_diff_cat=Math.abs(row-row_cat);
+
+  if(col_diff_mouse<=1 && row_diff_mouse<=1) {
+    document.getElementById("help").innerHTML="squeek"
+    penalty+=2;
+    Penalty.innerHTML="Penalty is "+penalty;
+  }
+  else if(col_diff_cat<=1 && row_diff_cat<=1) {
+    document.getElementById("help").innerHTML="Meow"
+    penalty+=2;
+    Penalty.innerHTML="Penalty is "+penalty;
+  }
+  else {
+    document.getElementById("help").innerHTML="sorry, no help available"
+    penalty+=2;
+    Penalty.innerHTML="Penalty is "+penalty;
+  }
+}
+</script>
 </body>
 </html>
