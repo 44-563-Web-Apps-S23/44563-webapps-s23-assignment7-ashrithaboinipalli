@@ -33,11 +33,12 @@ function recordTime() {
       console.log(reactTime);
 }
 function startTime(){
-  for (let i=0;i<9;i++) {
+  var value = Math.floor(Math.random() *9+2);
+  for (let i=0;i<value;i++) {
     setTimeout(function(){
       console.log(i);
       document.getElementById('counter').innerHTML="Count: "+i;
-    },(9-i)*1000);
+    },(value-i)*1000);
   }
   setTimeout(function(){
     if (reactTime==undefined) {
