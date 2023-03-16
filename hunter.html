@@ -60,6 +60,7 @@
   <p id="Penalty">Penalty is zero.</p>
   <p class="click" onclick="help()">Click for help.</p>
   <p id="help">Help report</p>
+  <button type="button" class="btn btn-success" onclick="reset()"> Reset</button>
 
   <div class="flex-container">
     <div class="col-sm">
@@ -152,8 +153,8 @@
   var checkCount=0
   var penalty=0
   var lastCheck=0
-  var mouseLocation=13
-  var catLocation=21
+  var mouseLocation=Math.floor(Math.random()*24);
+  var catLocation=Math.floor(Math.random()*24);
   var gameOver=false
 
   function check(position){
@@ -208,6 +209,19 @@ function help() {
     document.getElementById("help").innerHTML="sorry, no help available"
     penalty+=2;
     Penalty.innerHTML="Penalty is "+penalty;
+  }
+}
+function reset() {
+  mouseLocation=Math.floor(Math.random()*24);
+  catLocation=Math.floor(Math.random()*24);
+  checkCount=0
+  penalty=0
+  lastCheck=0
+  gameOver=false
+  Penalty.innerHTML="Penalty is "+penalty;
+  bushes.innerHTML="Number of bushes checked is "+checkCount;
+  for (i = 0; i < 24; i++) {
+    document.getElementById(ids[i]).src ="bush.jpg";
   }
 }
 </script>
